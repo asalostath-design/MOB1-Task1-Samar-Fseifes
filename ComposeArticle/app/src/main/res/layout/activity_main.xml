@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/article_bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- صورة البانر في الأعلى -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bg_compose_background"
+            tools:ignore="ContentDescription" />
+
+        <!-- العنوان الرئيسي -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/title_jetpack_compose"
+            android:textSize="24sp"
+            android:textColor="@color/article_text" />
+
+        <!-- الفقرة الأولى -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/article_content_1"
+            android:textSize="16sp"
+            android:textColor="@color/article_text"
+            android:justificationMode="inter_word"
+            tools:targetApi="26" />
+
+        <!-- الفقرة الثانية -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/article_content_2"
+            android:textSize="16sp"
+            android:textColor="@color/article_text"
+            android:justificationMode="inter_word"
+            tools:targetApi="26" />
+
+    </LinearLayout>
+</ScrollView>
