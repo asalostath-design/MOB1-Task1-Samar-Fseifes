@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="quadrant_color_1">#FDEADEC</color>
+    <color name="quadrant_color_2">#FFD8BE</color>
+    <color name="q_text">#000000</color>
+</resources>

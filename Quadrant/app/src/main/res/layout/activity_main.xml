@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- الربع الأول (يأخذ اللون الأول) -->
+    <LinearLayout
+        android:id="@+id/quadrant1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/quadrant_color_1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/quadrant3"
+        app:layout_constraintEnd_toStartOf="@id/quadrant2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/title_text_composable"
+            android:textStyle="bold"
+            android:textColor="@color/q_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_text_composable"
+            android:textAlignment="center"
+            android:textColor="@color/q_text" />
+    </LinearLayout>
+
+    <!-- الربع الثاني (يأخذ اللون الثاني) -->
+    <LinearLayout
+        android:id="@+id/quadrant2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/quadrant_color_2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/quadrant4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/quadrant1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/title_image_composable"
+            android:textStyle="bold"
+            android:textColor="@color/q_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_image_composable"
+            android:textAlignment="center"
+            android:textColor="@color/q_text" />
+    </LinearLayout>
+
+    <!-- الربع الثالث (يأخذ اللون الثاني) -->
+    <LinearLayout
+        android:id="@+id/quadrant3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/quadrant_color_2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/quadrant4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quadrant1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/title_row_composable"
+            android:textStyle="bold"
+            android:textColor="@color/q_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_row_composable"
+            android:textAlignment="center"
+            android:textColor="@color/q_text" />
+    </LinearLayout>
+
+    <!-- الربع الرابع (يأخذ اللون الأول) -->
+    <LinearLayout
+        android:id="@+id/quadrant4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/quadrant_color_1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/quadrant3"
+        app:layout_constraintTop_toBottomOf="@id/quadrant2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/title_column_composable"
+            android:textStyle="bold"
+            android:textColor="@color/q_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_column_composable"
+            android:textAlignment="center"
+            android:textColor="@color/q_text" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
