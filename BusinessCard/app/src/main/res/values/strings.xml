@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Business Card</string>
+    <string name="full_name">Samar A. Fseifes</string>
+    <string name="title_job">Expert Android Developer</string>
+    <string name="phone_number">+972595960906</string>
+    <string name="social_handle">\@AndroidDev</string>
+    <string name="email_address">smrfsyfs@android.com</string>
+</resources>
